@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #faedcd;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#form-login,#form-register{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* background-color: #fefae0; */
+    padding: 0 1em;
+}
+
+h2{
+    text-align: center;
+    background-color: #d4a373;
+    padding: .75em;
+    color: #fefae0;
+    border-radius: .3em;
+    margin-bottom: 0;
+    
+}
+
+input{
+    padding: .75em;
+    border-radius: .3em;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#login,#register{
+    background-color: #d4a373;
+    color: #fefae0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+ 
+}
+
+
+
+p{
+    text-align: center;
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+a{
+    text-decoration: none;
+    color: #d4a373;
+    
+}

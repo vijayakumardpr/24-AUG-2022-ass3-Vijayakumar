@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    background-color: #faedcd;
+}
+
+.content-page{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #d4a373;
+    padding: .75em;
+    color: #faedcd;
+}
+
+.signout{
+    margin-left: 10px;
+    background-color: #faedcd;
+    border: none;
+    outline: none;
+    padding: .5em;
+    border-radius: .3em;
+    color: #d4a373;
+    cursor: pointer;
+}
