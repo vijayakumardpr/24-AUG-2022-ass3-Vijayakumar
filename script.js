@@ -11,6 +11,10 @@ form.addEventListener("submit", (e) => {
   e.preventDefault()
 
   if (userName.value === "" && password.value === "") return
+  
+  if (allData.length === 0) {
+    window.location.href = "register.html"
+  }
 
   let user = allData.some((data) => {
     if (userName.value === data.firstName && password.value !== data.password) {
