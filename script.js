@@ -30,12 +30,7 @@ form.addEventListener("submit", (e) => {
       }
       loginPerson.push(newUser)
       localStorage.setItem("newUser", JSON.stringify(loginPerson))
-    } else if (
-      userName.value !== data.firstName &&
-      password.value !== data.password
-    ) {
-      window.location.href = "register.html"
-    }
+    } 
     return userName.value === data.firstName && password.value === data.password
   })
   if (user) {
