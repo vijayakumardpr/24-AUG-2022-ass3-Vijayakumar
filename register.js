@@ -34,7 +34,7 @@ formRegister.addEventListener("submit", (e) => {
 
     localStorage.setItem("registerData", JSON.stringify(allInformation))
 
-    window.location = "index.html"
+    window.location.href = "index.html"
 
     clearForm()
   } else {

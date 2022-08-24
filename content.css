@@ -30,6 +30,7 @@ h2 {
 .navbar-menu {
   display: flex;
   list-style: none;
+  padding-left: 0;
 }
 
 .navbar-menu > li {

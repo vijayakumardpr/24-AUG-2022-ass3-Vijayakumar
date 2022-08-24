@@ -11,5 +11,5 @@ signOut.addEventListener("click", (e) => {
   e.preventDefault()
   localStorage.removeItem("newUser")
   fullName.textContent = `Access Denied`
-  window.location = "index.html"
+  window.location.href = "index.html"
 })

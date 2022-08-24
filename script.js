@@ -30,12 +30,12 @@ form.addEventListener("submit", (e) => {
       userName.value !== data.firstName &&
       password.value !== data.password
     ) {
-      window.location = "register.html"
+      window.location.href = "register.html"
     }
     return userName.value === data.firstName && password.value === data.password
   })
   if (user) {
-    window.location = "content.html"
+    window.location.href = "content.html"
     clearForm()
   }
 })
