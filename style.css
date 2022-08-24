@@ -6,6 +6,7 @@ body {
   background-color: #faedcd;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
@@ -59,7 +60,7 @@ a {
 }
 
 #email-error-notes,
-#password-error-note {
+#error-note {
   display: none;
   color: red;
 }

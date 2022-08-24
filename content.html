@@ -1,18 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Content Page</title>
-    <link rel="stylesheet" href="content.css">
-</head>
-<body>
-    <div class="content-page">
-        <p>User name, Last name</p>
-        <a href="index.html">
-            <button class="signout">Sign Out</button>
-        </a>
-    </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="content.css" />
+    <script src="content.js" defer></script>
+  </head>
+  
+  <body>
+    <main>
+          <!-- <div class="content-page">
+      <p id="fullName">Access Denied</p>
+
+      <button class="signout">Sign Out</button>
+    </div> -->
+    <nav class="navbar">
+      <ul class="navbar-menu">
+        <li><a href="#about">About</a</li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+      <div class="login-name">
+        <p id="fullName">Access Denied</p>
+        <button class="signout">Sign Out</button>
+      </div>
+      
+    </nav>
+    
+      <section class="section aboutUs" id="about">
+        <h2>About Us</h2>
+        <div class="product-home">
+          <div class="product">
+            <img src="./images/briyani1.jpg" alt="">
+          </div>
+          <div class="product-details">
+                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Repellendus perferendis odio magni corrupti doloribus similique 
+            reiciendis quam blanditiis nostrum minus obcaecati dicta sint provident nisi 
+            sunt amet accusamus, corporis quisquam.
+             
+          </div>
+        </div>
+      </section>
+      <section class="section contactUs" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="#">
+          <input class="username" type="text" placeholder="Name">
+          <input class="email" type="email" placeholder="Email">
+          <textarea class="textarea" rows="4" placeholder="Message"></textarea>
+          <input class="submit-btn" type="submit" value="Submit">
+        </form>
+      </section>
+      <section class="section gallery" id="gallery">
+        <h2>Gallery</h2>
+          <div class="grid-container">
+            <img class="image" src="./images/briyani1.jpg" alt="briyani">
+            <img class="image" src="./images/burger2.jpg" alt="burger2">
+            <img class="image" src="./images/burgur1.jpg" alt="burger1">
+            <img class="image" src="./images/meal1.jpg" alt="meal">
+            <img class="image" src="./images/salad1.jpg" alt="salad1">
+            <img class="image" src="./images/salad2.jpg" alt="salad2">
+            <img class="image" src="./images/salad3.jpg" alt="salad3">
+            <img class="image" src="./images/sanveg1.jpg" alt="sandwich">
+            <img class="image" src="./images/tea1.jpg" alt="tea">
+          </div>
+      </section>
+    </main>
+  </body>
 </html>
