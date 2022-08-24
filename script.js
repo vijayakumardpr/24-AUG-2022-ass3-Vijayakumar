@@ -11,13 +11,18 @@ form.addEventListener("submit", (e) => {
   e.preventDefault()
 
   if (userName.value === "" && password.value === "") return
-  
+
   if (allData.length === 0) {
     window.location.href = "register.html"
   }
 
   let user = allData.some((data) => {
-    if (userName.value === data.firstName && password.value !== data.password) {
+    if (userName.value !== data.firstName && password.value !== data.password) {
+      window.location.href = "register.html"
+    } else if (
+      userName.value === data.firstName &&
+      password.value !== data.password
+    ) {
       console.log("password incorrect")
       pwdError.style.display = "block"
       pwdError.textContent = `* Password incorrect`
@@ -30,7 +35,7 @@ form.addEventListener("submit", (e) => {
       }
       loginPerson.push(newUser)
       localStorage.setItem("newUser", JSON.stringify(loginPerson))
-    } 
+    }
     return userName.value === data.firstName && password.value === data.password
   })
   if (user) {
